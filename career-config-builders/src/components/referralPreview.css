@@ -1,0 +1,321 @@
+/* Preview referral: estilos cercanos a career page (fuentes sistema en standalone) */
+.section {
+  width: 100%;
+}
+
+.referral-preview-loading,
+.referral-preview-hint {
+  text-align: center;
+  padding: 1rem;
+  color: #4a4a4a;
+}
+
+.referral-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 10%;
+}
+
+.referral-title-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.referral-subtitle-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+.referral-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2% 10%;
+}
+
+.referral-form-title {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  color: #22202d;
+  margin: 0;
+}
+
+.referral-form-control-input-container {
+  padding: 15px 20px;
+  width: 315px;
+  max-width: 100%;
+  background: #ffffff;
+  border: 1px solid #94bce3;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1%;
+  box-sizing: border-box;
+}
+
+.referral-form-control-input-container-dropdown {
+  position: relative;
+  width: 315px;
+  max-width: 100%;
+  margin-bottom: 1%;
+}
+
+.referral-select-selected {
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.referral-dropdown-filter-element-title {
+  margin: 0% 3%;
+  width: 90%;
+}
+
+.city-dropdown-filter-element-title-disabled {
+  color: #757575;
+}
+
+.referral-select-items {
+  position: relative;
+  z-index: 99;
+  overflow: auto;
+  padding: 10px 10px 15px;
+  max-height: 399px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.referral-form-control-input {
+  width: 100%;
+  margin: 0% 2%;
+  border: none;
+  background: transparent;
+}
+
+.referral-form-control-input:focus-visible {
+  outline: none;
+}
+
+.referral-form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.referral-form-help-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.referral-form-button-icon-container {
+  width: 10%;
+}
+
+.referral-form-button-text-container {
+  width: 90%;
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
+.referral-form-button-icon {
+  width: 100%;
+  height: auto;
+}
+
+.referral-form-help-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #dc742e;
+  margin-top: 1%;
+}
+
+.referral-form-warning-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #22202d;
+  text-align: center;
+}
+
+.referral-form-actions-row {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.referral-form-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #2f6db3;
+  border-radius: 10px;
+  border: none;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.referral-instructions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2% 10%;
+  background: #f5f5f5;
+}
+
+.referral-instructions-title-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  color: #132e82;
+  margin: 0;
+}
+
+.referral-instructions-subtitle-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #132e82;
+  margin: 0;
+}
+
+.referral-instructions-step-title {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #132e82;
+  margin-bottom: 0.5%;
+}
+
+.referral-instructions-step-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4a4a;
+  margin-bottom: 1%;
+}
+
+.referral-instructions-attention {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(148, 188, 227, 0.2);
+  border: 1px solid #94bce3;
+  border-radius: 10px;
+  margin-top: 1%;
+}
+
+.referral-instructions-attention-title {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #dc742e;
+}
+
+.referral-instructions-attention-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.referral-help-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3% 10%;
+  background: #e8e8e8;
+}
+
+.referral-help-title,
+.referral-help-subtitle {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #132e82;
+  margin-bottom: 2%;
+}
+
+.referral-help-instructions {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4a4a;
+}
+
+.city-dropdown-filter-element-option {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.city-dropdown-filter-element-option:hover {
+  background-color: #f5f5f5;
+}
+
+.referral_conditions_container {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+.referral_conditions {
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.referral-form-control-input-emoji {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}

@@ -1,0 +1,201 @@
+{
+  "subsidiaryId": 51,
+  "vacancies": true,
+  "company_name": "Walmart",
+  "company_logo": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/logo+wm+blanco-01.png",
+  "company_banner": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/banner-actualizado.png",
+  "mainFiltersButtonImg":"https://emi-public.s3.amazonaws.com/static/walmart/Logos/Ellipse+1.png",
+  "company_banner_mobile": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/banner-mobile-actualizado.png",
+  "main_title": "Este Es El Lugar de las oportunidades ¡Solo faltas tú!",
+  "filters_description": "Indica una palabra o una ubicación para encontrar una posición",
+  "filters_description_2": "",
+  "positions_container_title": "Posiciones Disponibles",
+  "positions_container_subtitle": "Filtrar posiciones disponibles por",
+  "goBackLinkImg": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/arrow-left.svg",
+  "modalApplyImg": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/Ellipse+1.png",
+  "country": "MX",
+  "language": "ES",
+  "style": {
+    "clientLogoBackgroundColor": "#142D82",
+    "mainFiltersContainerBackgroundColor": "#132e82",
+    "mainFiltersSearchButton": {
+      "background": "#2f6db3",
+      "color": "#FFFFFF"
+    },
+    "cardButtonStyle":{
+      "background":"rgba(148, 188, 227, 0.2)",
+      "border":"1px solid #2f6db3",
+      "textColor": "#2f6db3"
+    },
+    "footerBackgroundColor": "#dae7f5",
+    "goBackLinkColor": "#dae7f5",
+    "referralTitleBackgroundColor": "#8ab644"
+  },
+  "socialNetworkLinks":{
+    "tikTok":"https://www.tiktok.com/@trabajaenwalmartmexcam/",
+    "facebook":"https://www.facebook.com/TrabajaEnWalmartMX",
+    "instagram":"https://www.instagram.com/trabaja.walmart.mx/"
+  },
+  "channelConfig": {
+    "whatsapp": {
+      "phoneNumber": "525588817796"
+    },
+    "facebook": {
+      "page": "TrabajaEnWalmartMX"
+    }
+  },
+  "about":{
+    "title": "Sobre la empresa",
+    "texts": [
+      {
+        "text": "En Walmart de México y Centroamérica estamos comprometidos con la Diversidad e Inclusión, buscamos incorporar el mejor talento basándonos en competencias, habilidades y potencial; no discriminamos por ningún motivo, por ello durante el proceso de atracción y selección no solicitaremos información personal, fotografías o análisis clínicos de ningún tipo incluyendo VIH y Covid-19; por lo que te invitamos a compartir tu CV sin incluir fotografía ni nombre."
+      },
+      {
+        "text": "Fomentar un ambiente de trabajo donde se fomenta el respeto por el individuo, forma parte de cultura en Walmart."
+      },
+      {
+        "text":"Buscamos siempre incorporar al mejor talento basándonos en competencias habilidades y potencial; no discriminamos por género, edad, origen étnico, apariencia física, estado civil, estado de salud, situación socioeconómica, discapacidad, orientación sexual, identidad o expresión de género; por ello consideramos que los datos personales del candidato o candidata no son relevantes durante el proceso de entrevista ni para la selección final."
+      },
+      {
+        "text": "En caso de que necesites algún ajuste razonable por favor avísalo"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Beneficios del puesto",
+    "benefitsSinceFirstDay": {
+      "title":"",
+      "texts": [{
+        "text": "Prestaciones de ley (desde el primer día de trabajo)"
+      }]
+    },
+    "benefitsFromStart": {
+      "title": "Al contrato de planta",
+      "texts": [{
+        "text": "Caja de ahorro"
+      },
+      {
+        "text": "Vales de despensa"
+      },
+      {
+        "text": "Seguro de vida"
+      },
+      {
+        "text": "Aguinaldo superior a la ley"
+      },
+      {
+        "text": "Días personales y permisos especiales"
+      },
+      {
+        "text": "Descuento de asociado, en productos dentro del grupo"
+      },
+      {
+        "text": "Red de convenios y descuentos con otras marcas"
+      },
+      {
+        "text": "Bono anual de acuerdo a la venta de la unidad"
+      },
+      {
+        "text": "Orientación jurídica, médica y psicológica gratuita"
+      },
+      {
+        "text": "Planes de desarrollo y oportunidad de crecimiento"
+      }
+    ]
+    }
+  },
+  "eref2": {
+    "application": [
+      "positionId"
+    ]
+  },
+  "linkGoBack": true,
+  "disclaimer": "Podrás aplicar a cualquier posición de Walmart, y en caso de que cumplas con los requisitos y hayan vacantes te estaremos contactando",
+  "referral": {
+    "company_banner": "https://emi-public.s3.amazonaws.com/static/walmart/banners/walmart-desktop-actualizada.png",
+    "company_banner_mobile": "https://emi-public.s3.amazonaws.com/static/walmart/banners/walmart-desktop-mobile-actualizada.png",
+    "title": "Referir es tener actitud de dueño",
+    "subTitle": "Invita a tus amigos y familiares a trabajar en cualquier unidad de grupo Walmart",
+    "formTitle": "Refiere al mejor talento",
+    "help": {
+      "title": "¿Dónde encuentro mi número de asociado y determinante?",
+      "subTitle": "En tu gafete de asociado",
+      "instructions": "Dale vuelta y encontrarás el “N° de asociado“  y “Determinante“, que son los datos que debes completar en los campos indicados",
+      "image": "https://emi-public.s3.amazonaws.com/static/walmart/nro-asociado.png"
+    },
+    "warning": "Si estás seguro de que escribiste correctamente tu número de asociado, que se encuentra al reverso de tu gafete, da clic en “Generar mi link“",
+    "instructionsTitle": "¡Referir conocidos nunca fue tan fácil!",
+    "instructionsSubTitle": "Sigue los siguientes pasos",
+    "instructions": [
+      {
+        "title": "Primer Paso",
+        "text": "Escribe tu número de asociado. Si no lo conoces, lo puedes encontrar en el reverso de tu gafete, como se muestra en el ejemplo"
+      },
+      {
+        "title": "Segundo Paso",
+        "text": "Genera tu link personal de referido"
+      },
+      {
+        "title": "Tercer Paso",
+        "text": "Comparte la liga con quien tú quieras"
+      },
+      {
+        "title": "Cuarto Paso",
+        "text": "Tus referidos deben utilizar la liga y platicar con Emi. ¡No te preocupes! Identificaremos tu código, sólo asegúrate de escribir correctamente tu número de asociado"
+      }
+    ],
+    "attention": {
+      "title": "Aviso",
+      "texts": [
+        {
+          "text": "Recuerda que si no proporcionas correctamente tu número de asociado, no podrás disfrutar de los beneficios del programa."
+        },
+        {
+          "text": "Recuerda que para cualquier duda que tengas respecto al programa, puedes consultar nuestra ",
+          "link": {
+            "href":"https://politicasyprocesos.mx.wal-mart.com:9443/e423ba7d-5108-4c8f-9d5c-810e90bbb799%20%20%20",
+            "label": "política de referidos."
+          }
+        }
+      ]
+    },
+    "conditions": "",
+    "redirect": "https://wa.me/525588817796?text=Hola+Emi!+Te+escribo+para+postularme+a+Walmart+tengo+el+código:",
+    "redirectListing": "2077",
+    "redrectListingType": "job",
+    "generateLinkButtonImg": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/Ellipse+1.png",
+    "employeeFields": [
+      {
+        "name": "employee_referrer_full_name",
+        "label": "Tu nombre completo",
+        "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/face.png"
+      },
+      {
+        "name": "employee_referrer_employee_id",
+        "label": "Tu número de asociado",
+        "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/space.png"
+      },
+      {
+        "name": "employee_referrer_format",
+        "label": "Formato",
+        "dropdown": [
+          { "key": "Bodega aurrera", "value": "Bodega aurrera" },
+          { "key": "Bodega Aurrera express", "value": "Bodega Aurrera express" },
+          { "key": "Mi bodega aurrera", "value": "Mi bodega aurrera" },
+          { "key": "Sam's club", "value": "Sam's club" },
+          { "key": "Walmart", "value": "Walmart" },
+          { "key": "Walmart express", "value": "Walmart express" }
+        ],
+        "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/business_center.svg"
+      },
+      {
+        "name": "employee_referrer_working_place_id",
+        "label": "Determinante",
+        "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/disabled-pin.svg",
+        "dropdown": "stateSubsidiaryLocations",
+        "inputText": true
+      }
+    ],
+    "isIncentivized": false
+  }
+}

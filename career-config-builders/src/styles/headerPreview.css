@@ -1,0 +1,60 @@
+/* Encabezado Emi + franja logo/banner (preview builders) */
+.emi-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 10%;
+  width: 100%;
+  box-sizing: border-box;
+  height: 43px;
+  background: #22202d;
+}
+
+.text-emi-header {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #dae7f5;
+}
+
+.emi-logo-header {
+  display: block;
+}
+
+.client-logo-container-single-position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 64px;
+  padding: 1% 10%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.client-logo-single-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-logo-image {
+  width: auto;
+  height: 60px;
+  max-width: 100%;
+}
+
+.client-banner-container {
+  width: 100%;
+  line-height: 0;
+}
+
+.client-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}

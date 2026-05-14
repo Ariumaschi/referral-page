@@ -1,0 +1,160 @@
+{
+  "subsidiaryId": 0,
+  "vacancies": true,
+  "company_name": "",
+  "company_logo": "",
+  "company_banner": "",
+  "mainFiltersButtonImg": "",
+  "company_banner_mobile": "",
+  "main_title": "",
+  "filters_description": "",
+  "filters_description_2": "",
+  "positions_container_title": "",
+  "positions_container_subtitle": "",
+  "goBackLinkImg": "",
+  "modalApplyImg": "",
+  "country": "MX",
+  "language": "ES",
+  "style": {
+    "clientLogoBackgroundColor": "#142D82",
+    "mainFiltersContainerBackgroundColor": "#132e82",
+    "mainFiltersSearchButton": {
+      "background": "#2f6db3",
+      "color": "#FFFFFF"
+    },
+    "cardButtonStyle": {
+      "background": "rgba(148, 188, 227, 0.2)",
+      "border": "1px solid #2f6db3",
+      "textColor": "#2f6db3"
+    },
+    "footerBackgroundColor": "#dae7f5",
+    "goBackLinkColor": "#dae7f5",
+    "referralTitleBackgroundColor": "#142D82",
+    "referralTitleTextColor": "#FFFFFF",
+    "referralSubtitleTextColor": "#FFFFFF"
+  },
+  "socialNetworkLinks": {
+    "linkedin": "",
+    "facebook": "",
+    "instagram": "",
+    "tikTok": ""
+  },
+  "channelConfig": {
+    "whatsapp": {
+      "phoneNumber": ""
+    },
+    "facebook": {
+      "page": ""
+    }
+  },
+  "about": {
+    "title": "",
+    "texts": [
+      { "text": "" },
+      { "text": "" },
+      { "text": "" },
+      { "text": "" }
+    ]
+  },
+  "benefits": {
+    "title": "",
+    "benefitsSinceFirstDay": {
+      "title": "",
+      "texts": [
+        { "text": "" }
+      ]
+    },
+    "benefitsFromStart": {
+      "title": "",
+      "texts": [
+        { "text": "" }
+      ]
+    }
+  },
+  "eref2": {
+    "application": [
+      "positionId"
+    ]
+  },
+  "linkGoBack": true,
+  "disclaimer": "",
+  "referral": {
+    "company_banner": "",
+    "company_banner_mobile": "",
+    "title": "",
+    "subTitle": "",
+    "formTitle": "Compártenos los datos de tu referido",
+    "help": {
+      "title": "",
+      "subTitle": "",
+      "instructions": "",
+      "image": ""
+    },
+    "warning": "",
+    "instructionsTitle": "¡Referir conocidos nunca fue tan fácil!",
+    "instructionsSubTitle": "Completa los siguientes pasos",
+    "instructions": [
+      {
+        "title": "Primer Paso",
+        "text": "Completá tus datos en el formulario"
+      },
+      {
+        "title": "Segundo Paso",
+        "text": "Generá tu link personal de referido"
+      },
+      {
+        "title": "Tercer Paso",
+        "text": "Compartí el link con quien quieras"
+      },
+      {
+        "title": "Cuarto Paso",
+        "text": "El candidato o candidata deberá registrarse a través de tu liga y completar su aplicación con Emi."
+      }
+    ],
+    "attention": {
+      "title": "Aviso",
+      "texts": [
+        {
+          "text": "Recuerda que si no proporcionas correctamente tu número de empleado, no podrás disfrutar de los beneficios del programa."
+        },
+        {
+          "text": "Recuerda que para cualquier duda que tengas respecto al programa, puedes consultar nuestra política de referidos o contactar al equipo de Atracción de Talento.",
+          "link": {
+            "href": "",
+            "label": ""
+          }
+        }
+      ]
+    },
+    "conditions": "",
+    "redirect": "",
+    "redirectListing": "",
+    "redrectListingType": "JOB",
+    "generateLinkButtonImg": "",
+    "employeeFields": [
+      {
+        "name": "employee_referrer_full_name",
+        "label": "Tu nombre completo",
+        "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/face.png"
+      },
+      {
+        "name": "employee_referrer_employee_id",
+        "label": "Tu ID de empleado",
+        "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/space.png"
+      },
+      {
+        "name": "employee_referrer_department",
+        "label": "Tu área",
+        "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/disabled-pin.svg"
+      },
+      {
+        "name": "employee_referrer_working_place_id",
+        "label": "Nombre de unidad",
+        "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/disabled-pin.svg",
+        "dropdown": "stateSubsidiaryLocations",
+        "inputText": true
+      }
+    ],
+    "isIncentivized": false
+  }
+}

@@ -1,0 +1,838 @@
+.referral-builder-page {
+  min-height: 100vh;
+  background: #f0f2f5;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.referral-builder-topbar {
+  background: #132e82;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.referral-builder-topbar-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.referral-builder-topbar h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.referral-builder-topbar-sub {
+  font-size: 0.78rem;
+  font-weight: 400;
+  opacity: 0.9;
+  max-width: 36rem;
+  line-height: 1.35;
+}
+
+.referral-builder-topbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.referral-builder-topbar-link {
+  color: #dae7f5;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.referral-builder-topbar-link:hover {
+  color: #fff;
+}
+
+.referral-builder-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.92fr) minmax(440px, 1.18fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1680px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .referral-builder-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .referral-builder-preview {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    display: block;
+  }
+
+  .referral-builder-preview > .referral-builder-device-frame {
+    max-height: min(75vh, 900px);
+  }
+}
+
+.referral-builder-panel {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.referral-builder-panel h2 {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  color: #132e82;
+  border-bottom: 1px solid #e8ecf1;
+  padding-bottom: 8px;
+}
+
+.referral-builder-config-panel > h2 {
+  margin-top: 28px;
+}
+
+.referral-builder-config-panel > h2:first-of-type {
+  margin-top: 0;
+}
+
+.referral-builder-h3 {
+  margin: 14px 0 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2f3b52;
+}
+
+.referral-builder-hint {
+  margin: -6px 0 14px;
+  font-size: 0.8rem;
+  color: #6c757d;
+  line-height: 1.45;
+  max-width: 42rem;
+}
+
+.referral-builder-hint-field {
+  margin: 6px 0 0;
+  max-width: none;
+}
+
+.referral-builder-field {
+  margin-bottom: 14px;
+}
+
+.referral-builder-field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.referral-builder-field input[type="text"],
+.referral-builder-field input[type="number"],
+.referral-builder-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #ccd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.referral-builder-field textarea {
+  min-height: 64px;
+  resize: vertical;
+}
+
+.referral-builder-field small {
+  display: block;
+  margin-top: 4px;
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.referral-builder-assets-note {
+  background: #f8f9fa;
+  border: 1px dashed #adb5bd;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  color: #495057;
+}
+
+.referral-builder-colors-note {
+  margin-bottom: 12px;
+}
+
+.referral-builder-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.referral-builder-actions button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.referral-builder-actions .primary {
+  background: #2f6db3;
+  color: #fff;
+}
+
+.referral-builder-actions .secondary {
+  background: #e9ecef;
+  color: #212529;
+}
+
+/* Accordion sections */
+/* ── Section progress bar ───────────────────────────── */
+.rb-progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.rb-progress-track {
+  flex: 1;
+  height: 4px;
+  background: #e4e8ef;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.rb-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1a7a53, #27ae60);
+  border-radius: 99px;
+  transition: width 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.rb-progress-label {
+  font-size: 0.7rem;
+  color: #8a93a8;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Accordion ──────────────────────────────────────── */
+.rb-accordion {
+  border: 1px solid #e4e8ef;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.rb-accordion-summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #132e82;
+  background: #f8f9fc;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.rb-summary-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rb-done-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #1a7a53;
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.rb-accordion[open] > .rb-accordion-summary {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #e4e8ef;
+  animation: rb-summary-flash 1.4s ease-out forwards;
+}
+
+@keyframes rb-summary-flash {
+  0%   { background-color: rgba(192, 57, 43, 0.13); color: #c0392b; }
+  55%  { background-color: rgba(192, 57, 43, 0.06); color: #c0392b; }
+  100% { background-color: #f8f9fc; color: #132e82; }
+}
+
+.rb-accordion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.rb-accordion-summary::after {
+  content: "›";
+  font-size: 1.3rem;
+  color: #8a93a8;
+  transform: rotate(90deg);
+  transition: transform 0.18s ease;
+  display: inline-block;
+  line-height: 1;
+}
+
+.rb-accordion[open] > .rb-accordion-summary::after {
+  transform: rotate(270deg);
+}
+
+.rb-accordion-body {
+  padding: 16px 16px 8px;
+}
+
+@keyframes rb-body-slide-in {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.rb-accordion[open] > .rb-accordion-body {
+  animation: rb-body-slide-in 0.2s ease-out;
+}
+
+.referral-builder-json-details {
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 12px 14px 14px;
+  background: #fafbfc;
+}
+
+.referral-builder-json-summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #132e82;
+  font-size: 0.9rem;
+  list-style-position: outside;
+}
+
+.referral-builder-json-details[open] .referral-builder-json-summary {
+  margin-bottom: 8px;
+}
+
+.referral-builder-json-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 220px;
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 1.45;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background: #fff;
+  margin-top: 8px;
+}
+
+/* Columna derecha fija al viewport: el formulario largo hace scroll; la referral se ve en paralelo */
+.referral-builder-preview {
+  position: sticky;
+  top: 16px;
+  align-self: start;
+  max-height: calc(100vh - 32px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.referral-builder-preview > h2,
+.referral-builder-preview > .referral-builder-preview-intro,
+.referral-builder-preview > .referral-builder-device-tabs {
+  flex-shrink: 0;
+}
+
+.referral-builder-preview-banner {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+  display: block;
+}
+
+.referral-builder-preview-hero {
+  padding: 16px;
+  text-align: center;
+}
+
+.referral-builder-preview-hero h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.referral-builder-preview-hero p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+.referral-builder-preview-form {
+  padding: 16px;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+}
+
+.referral-builder-preview-form h4 {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+}
+
+.referral-builder-preview-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.referral-builder-preview-row img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.referral-builder-preview-instructions {
+  padding: 14px;
+  font-size: 0.8rem;
+  border-top: 1px solid #eee;
+}
+
+.referral-builder-preview-instructions h5 {
+  margin: 0 0 6px;
+  font-size: 0.85rem;
+}
+
+.referral-builder-preview-instructions ol {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.referral-builder-toast {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #d4edda;
+  color: #155724;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.referral-builder-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #ccd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.referral-builder-color-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 16px;
+  border: 1px solid #e8ecf1;
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.referral-builder-color-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2f3b52;
+  flex: 1 1 160px;
+  min-width: 0;
+}
+
+.referral-builder-color-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.referral-builder-color-inputs input[type="text"] {
+  width: 110px;
+  padding: 6px 8px;
+  border: 1px solid #ccd;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
+.referral-builder-field-card {
+  border: 1px solid #e8ecf1;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.referral-builder-field-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8ecf1;
+}
+
+.referral-builder-field-card-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #132e82;
+}
+
+.referral-builder-btn-ghost {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* ── Asset upload card ───────────────────────────────── */
+.rb-asset-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 2px 0 6px;
+}
+
+.rb-asset-card-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rb-asset-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1.5px dashed #d1d5db;
+  border-radius: 10px;
+  padding: 18px 16px;
+  cursor: pointer;
+  background: #fafafa;
+  color: #9ca3af;
+  text-align: center;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.rb-asset-dropzone:hover {
+  border-color: #c0392b;
+  background: #fff5f5;
+  color: #c0392b;
+}
+
+.rb-asset-file-input-hidden {
+  display: none;
+}
+
+.rb-asset-upload-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.rb-asset-dropzone-text {
+  font-size: 0.83rem;
+  font-weight: 500;
+}
+
+.rb-asset-dropzone-hint {
+  font-size: 0.7rem;
+  opacity: 0.65;
+}
+
+.rb-asset-preview-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 9px 12px;
+  background: #fff;
+}
+
+.rb-asset-thumb {
+  width: 52px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #f3f4f6;
+  flex-shrink: 0;
+}
+
+.rb-asset-preview-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 0;
+  gap: 8px;
+}
+
+.rb-asset-preview-name {
+  font-size: 0.78rem;
+  color: #374151;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rb-asset-clear-btn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 3px 5px;
+  border-radius: 4px;
+  transition: color 0.12s, background 0.12s;
+}
+
+.rb-asset-clear-btn:hover {
+  color: #c0392b;
+  background: #fff0ef;
+}
+
+.rb-asset-url-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rb-asset-url-or {
+  font-size: 0.7rem;
+  color: #9ca3af;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.rb-asset-url-input {
+  flex: 1;
+  font-size: 0.78rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 5px 8px;
+  color: #374151;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+  min-width: 0;
+}
+
+.rb-asset-url-input:focus {
+  border-color: #c0392b;
+}
+
+.rb-asset-url-input::placeholder {
+  color: #c4c8cd;
+}
+
+.referral-builder-field-grid-emp {
+  margin-top: 0;
+}
+
+.referral-builder-field-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 960px) {
+  .referral-builder-field-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.referral-builder-actions-inline {
+  margin-top: 4px;
+}
+
+.referral-builder-preview-assets {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.referral-builder-preview-assets strong {
+  display: block;
+  font-size: 0.78rem;
+  color: #495057;
+  margin-bottom: 4px;
+}
+
+.referral-builder-preview-logo {
+  max-height: 44px;
+  max-width: 220px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.referral-builder-preview-row code {
+  margin-left: auto;
+  font-size: 0.7rem;
+  color: #6c757d;
+}
+
+.referral-builder-preview-intro {
+  margin: 0 0 14px;
+  font-size: 0.85rem;
+  color: #495057;
+  line-height: 1.45;
+}
+
+.referral-builder-device-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.referral-builder-device-tabs button {
+  padding: 8px 14px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #495057;
+}
+
+.referral-builder-device-tabs button.active {
+  background: #132e82;
+  color: #fff;
+  border-color: #132e82;
+}
+
+.referral-builder-device-frame {
+  background: #e9ecef;
+  border-radius: 10px;
+  padding: 12px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ocupa el alto restante bajo título/pestañas; scroll interno del mock */
+.referral-builder-preview > .referral-builder-device-frame {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: none;
+}
+
+.referral-builder-device-desktop .referral-live-preview-root {
+  width: 100%;
+  min-width: min(100%, 520px);
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  /* visible: los outline de inspección no se recortan en el borde del mock */
+  overflow: visible;
+}
+
+.referral-builder-device-mobile .referral-live-preview-root {
+  max-width: 390px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  overflow: visible;
+}
+
+.referral-live-preview-banner-wrap {
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.referral-live-preview-banner-wrap .client-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+
+/* Modo “inspeccionar”: correlación panel ↔ vista previa */
+.referral-builder-focus-section {
+  border-radius: 8px;
+  padding: 8px;
+  margin: 0 -8px 8px;
+  transition: box-shadow 0.15s ease;
+}
+
+.referral-builder-field-card.referral-builder-focus-section {
+  margin-bottom: 12px;
+}
+
+.referral-builder-focus-section.rb-section-active {
+  box-shadow: 0 0 0 2px #c0392b;
+  background: rgba(192, 57, 43, 0.04);
+}
+
+.rb-inspect-target {
+  position: relative;
+  transition: box-shadow 0.15s ease;
+}
+
+/* Borde interior: se ve aunque el padre tenga overflow:hidden (p. ej. banners) */
+.rb-inspect-target:focus-visible {
+  box-shadow: inset 0 0 0 3px rgba(192, 57, 43, 0.65);
+}
+
+.rb-inspect-target.rb-inspect-active {
+  z-index: 1;
+  box-shadow:
+    inset 0 0 0 3px #c0392b,
+    inset 0 0 0 5px rgba(255, 255, 255, 0.35);
+}
+
+.landing-builder-preview-root .landing-builder-preview-section {
+  overflow: visible;
+}
+
+.landing-builder-filters-mock {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 12px;
+}

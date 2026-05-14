@@ -1,0 +1,109 @@
+/* Vista previa landing: clases usadas por LandingLivePreview */
+.main-filters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-title {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  margin: 2%;
+}
+
+.filters-description {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 0% 5%;
+}
+
+.main-filters-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2% 6%;
+  flex-wrap: wrap;
+}
+
+.main-position-filter {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  min-width: 120px;
+  flex: 1 1 25%;
+  align-items: center;
+  padding: 1%;
+  margin: 0% 1% 0% 0%;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.main-position-filter-button {
+  width: auto;
+  min-width: 140px;
+}
+
+.main-position-filter-button-element {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.main-position-filter-button-image {
+  width: 15%;
+  min-width: 20px;
+  margin: 2%;
+}
+
+.section-listings {
+  box-sizing: border-box;
+}
+
+.positions-section-title {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #132e82;
+}
+
+.positions-section-subtitle {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.section {
+  width: 100%;
+}
