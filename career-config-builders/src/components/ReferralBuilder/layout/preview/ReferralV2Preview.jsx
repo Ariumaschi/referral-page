@@ -1,7 +1,11 @@
+// Renderiza la página de referral exactamente como la ve el usuario final.
+// Recibe el objeto company (el draft procesado) y builderInspect para resaltar  zonas al hacer clic. 
+// Los dropdowns muestran datos de ejemplo en el configurador (no los reales de producción).
 import { useState, useCallback } from "react";
 import ReactMarkdown from "react-markdown";
-import DropdownInput from "./DropdownInput";
-import "./referralPreview.css";
+import DropdownInput from "../../../DropdownInput";
+import { mergeInspectChrome } from "../../utils";
+import "../../../referralPreview.css";
 
 const SOCIAL_ICONS = {
   TikTok: (
@@ -35,38 +39,12 @@ const SOCIAL_ICONS = {
   ),
 };
 
-function inspectHandlers(builderInspect, regionId, className = "") {
-  const base = className || "";
-  if (!builderInspect) {
-    return { className: base };
-  }
-  const active = builderInspect.isRegionActive
-    ? builderInspect.isRegionActive(regionId)
-    : builderInspect.activeId === regionId;
-  return {
-    "data-rb-preview-region": regionId,
-    className: `${base} rb-inspect-target${active ? " rb-inspect-active" : ""}`.trim(),
-    onClick: (e) => {
-      e.stopPropagation();
-      builderInspect.onActivate(regionId);
-    },
-    role: "button",
-    tabIndex: 0,
-    onKeyDown: (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        builderInspect.onActivate(regionId);
-      }
-    },
-  };
-}
 
 export default function ReferralV2Preview({
   company,
   style = {},
   onGenerateLink = () => {},
   code = "",
-  query = {},
   isLoading = false,
   builderInspect,
 }) {
@@ -112,7 +90,7 @@ export default function ReferralV2Preview({
     <div className="section">
       <div
         style={{ backgroundColor: style.referralTitleBackgroundColor }}
-        {...inspectHandlers(builderInspect, "referral-hero", "referral-title-container")}
+        {...mergeInspectChrome(builderInspect, "referral-hero", "referral-title-container")}
       >
         <div>
           <h2
@@ -142,7 +120,7 @@ export default function ReferralV2Preview({
           <p className="referral-preview-hint">Vista con código de referido (omitida en el configurador).</p>
         ) : (
           <div className="referral-form-control">
-            <div {...inspectHandlers(builderInspect, "referral-form-title", "referral-form-title-wrap")}>
+            <div {...mergeInspectChrome(builderInspect, "referral-form-title", "referral-form-title-wrap")}>
               <p
                 className="referral-form-title"
                 style={style.referralFormTitleColor ? { color: style.referralFormTitleColor } : undefined}
@@ -152,7 +130,7 @@ export default function ReferralV2Preview({
             </div>
 
             {(r.employeeFields || []).map((field, i) => (
-              <div key={i} {...inspectHandlers(builderInspect, `referral-field-${i}`, "referral-builder-field-hit")}>
+              <div key={i} {...mergeInspectChrome(builderInspect, `referral-field-${i}`, "referral-builder-field-hit")}>
                 {field.dropdown ? (
                   <DropdownInput
                     name={field.name}
@@ -187,7 +165,7 @@ export default function ReferralV2Preview({
             ))}
 
             {r.help ? (
-              <div {...inspectHandlers(builderInspect, "referral-help-trigger", "referral-form-help-button-wrap")}>
+              <div {...mergeInspectChrome(builderInspect, "referral-help-trigger", "referral-form-help-button-wrap")}>
                 <button type="button" className="referral-form-help-button" onClick={handleScrollHelp}>
                   <p
                     className="referral-form-help-text"
@@ -199,7 +177,7 @@ export default function ReferralV2Preview({
               </div>
             ) : null}
 
-            <div {...inspectHandlers(builderInspect, "referral-warning", "referral-form-warning-wrap")}>
+            <div {...mergeInspectChrome(builderInspect, "referral-warning", "referral-form-warning-wrap")}>
               <p
                 className="referral-form-warning-text"
                 style={style.referralWarningTextColor ? { color: style.referralWarningTextColor } : undefined}
@@ -245,7 +223,7 @@ export default function ReferralV2Preview({
         className="referral-instructions-container"
         style={style.referralInstructionsContainer || undefined}
       >
-        <div {...inspectHandlers(builderInspect, "referral-instructions-header", "referral-instructions-header-wrap")}>
+        <div {...mergeInspectChrome(builderInspect, "referral-instructions-header", "referral-instructions-header-wrap")}>
           <div className="referral-instructions-title">
             <p
               className="referral-instructions-title-text"
@@ -260,7 +238,7 @@ export default function ReferralV2Preview({
         </div>
         <div className="referral-instructions-steps">
           {instructions.map((step, i) => (
-            <div key={i} {...inspectHandlers(builderInspect, `referral-instructions-step-${i}`, "referral-instructions-step")}>
+            <div key={i} {...mergeInspectChrome(builderInspect, `referral-instructions-step-${i}`, "referral-instructions-step")}>
               <div
                 className="referral-instructions-step-title"
                 style={style.referralInstructionsStepTitleColor ? { color: style.referralInstructionsStepTitleColor } : undefined}
@@ -280,7 +258,7 @@ export default function ReferralV2Preview({
         {r.attention ? (
           <div
             style={style.referralAttentionContainer || undefined}
-            {...inspectHandlers(builderInspect, "referral-attention", "referral-instructions-attention")}
+            {...mergeInspectChrome(builderInspect, "referral-attention", "referral-instructions-attention")}
           >
             <div
               className="referral-instructions-attention-title"
@@ -310,7 +288,7 @@ export default function ReferralV2Preview({
         <div
           id="referral-help-container-id"
           style={style.referralHelpContainer || undefined}
-          {...inspectHandlers(builderInspect, "referral-help", "referral-help-container")}
+          {...mergeInspectChrome(builderInspect, "referral-help", "referral-help-container")}
         >
           <div
             className="referral-help-title"
@@ -334,7 +312,7 @@ export default function ReferralV2Preview({
       ) : null}
       {socialItems.length ? (
         <div
-          {...inspectHandlers(builderInspect, "social-links")}
+          {...mergeInspectChrome(builderInspect, "social-links")}
           style={{
             background: "#dae2ec",
             borderRadius: 8,

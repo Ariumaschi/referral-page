@@ -836,3 +836,78 @@
   max-width: 640px;
   margin: 0 auto 12px;
 }
+
+/* ── S3 Logo Library ─────────────────────────────────────────────────────── */
+.rb-asset-library {
+  margin-top: 8px;
+}
+
+.rb-asset-library-toggle {
+  background: none;
+  border: 1px dashed #b0b8c9;
+  border-radius: 6px;
+  color: #4a5568;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px 10px;
+  width: 100%;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.rb-asset-library-toggle:hover {
+  background: #f0f4ff;
+}
+
+.rb-asset-library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+  padding: 10px;
+  background: #f8f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.rb-asset-library-loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 12px;
+  color: #718096;
+  padding: 12px 0;
+}
+
+.rb-asset-library-item {
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.rb-asset-library-item:hover {
+  border-color: #132e82;
+  box-shadow: 0 2px 8px rgba(19, 46, 130, 0.15);
+}
+
+.rb-asset-library-thumb {
+  height: 40px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.rb-asset-library-name {
+  font-size: 10px;
+  color: #4a5568;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
