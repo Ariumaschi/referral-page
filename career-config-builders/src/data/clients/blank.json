@@ -1,0 +1,87 @@
+{
+    "subsidiaryId": "",
+    "vacancies": true,
+    "company_name": "",
+    "company_logo": "",
+    "company_banner": "",
+    "mainFiltersButtonImg": "",
+    "company_banner_mobile": "",
+    "main_title": "",
+    "filters_description": "",
+    "filters_description_2": "",
+    "positions_container_title": "Posiciones Disponibles",
+    "positions_container_subtitle": "Filtrar posiciones disponibles por",
+    "goBackLinkImg": "",
+    "country": "MX",
+    "language": "ES",
+    "style": {
+        "clientLogoBackgroundColor": "",
+        "mainFiltersContainerBackgroundColor": "",
+        "mainFiltersSearchButton": {
+            "background": "",
+            "color": ""
+        },
+        "cardButtonStyle": {
+            "background": "",
+            "border": "",
+            "textColor": ""
+        },
+        "footerBackgroundColor": "",
+        "goBackLinkColor": "",
+        "referralTitleBackgroundColor": ""
+    },
+    "socialNetworkLinks": {},
+    "channelConfig": {
+        "whatsapp": {
+            "phoneNumber": ""
+        }
+    },
+    "about": {
+        "title": "",
+        "texts": [{ "text": "" }]
+    },
+    "benefits": {
+        "title": "",
+        "benefitsSinceFirstDay": {
+            "title": "",
+            "texts": [{ "text": "" }]
+        },
+        "benefitsFromStart": {
+            "title": "",
+            "texts": [{ "text": "" }]
+        }
+    },
+    "eref2": {},
+    "linkGoBack": true,
+    "disclaimer": "",
+    "referral": {
+        "company_banner": "",
+        "company_banner_mobile": "",
+        "title": "",
+        "subTitle": "",
+        "formTitle": "",
+        "warning": "",
+        "instructionsTitle": "",
+        "instructionsSubTitle": "",
+        "instructions": [
+            { "title": "Paso 1", "text": "" }
+        ],
+        "attention": {
+            "title": "",
+            "texts": [{ "text": "" }]
+        },
+        "conditions": "",
+        "redirect": "",
+        "redirectListing": "",
+        "redrectListingType": "job",
+        "generateLinkButtonImg": "",
+        "employeeFields": [
+            {
+                "name": "employee_referrer_full_name",
+                "label": "Nombre completo",
+                "emoji": ""
+            }
+        ],
+        "isIncentivized": false
+    }
+}

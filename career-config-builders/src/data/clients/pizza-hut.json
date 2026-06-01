@@ -1,0 +1,123 @@
+{
+    "subsidiaryId": 265,
+    "vacancies": true,
+    "company_name": "Pizza Hut",
+    "company_logo": "https://emi-public.s3.us-east-1.amazonaws.com/logos/pizza_hut_new_logo.jpeg",
+    "company_banner": "https://emi-public.s3.us-east-1.amazonaws.com/logos/Pizza-Hut-Banner-Indeed.png",
+    "mainFiltersButtonImg": "",
+    "company_banner_mobile": "https://emi-public.s3.us-east-1.amazonaws.com/logos/Pizza-Hut-Mobile-Banner-Indeed.png",
+    "main_title": "Este Es El Lugar de las oportunidades ¡Solo faltas tú!",
+    "filters_description": "Indica una palabra o una ubicación para encontrar una posición",
+    "filters_description_2": "",
+    "positions_container_title": "Posiciones Disponibles",
+    "positions_container_subtitle": "Filtrar posiciones disponibles por",
+    "goBackLinkImg": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/arrow-left.svg",
+    "modalApplyImg": "",
+    "country": "MX",
+    "language": "ES",
+    "style": {
+        "clientLogoBackgroundColor": "",
+        "mainFiltersContainerBackgroundColor": "#EF3840",
+        "mainFiltersSearchButton": {
+            "background": "rgb(1,38,57)",
+            "color": "#FFFFFF"
+        },
+        "cardButtonStyle": {
+            "background": "rgb(1,38,57)",
+            "border": "1px solid #2f6db3",
+            "textColor": "#2f6db3"
+        },
+        "footerBackgroundColor": "#FFFFFF",
+        "goBackLinkColor": "#dae7f5",
+        "referralTitleBackgroundColor": "#EF3840",
+        "referralTitleTextColor": "rgb(1,38,57)",
+        "referralSubtitleTextColor": "rgb(1,38,57)"
+    },
+    "socialNetworkLinks": {
+        "facebook": "https://www.facebook.com/profile.php?id=61574735309719&mibextid=wwXIfr&rdid=heg9ofOmMmSI339q&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15sQnFNPP8%2F%3Fmibextid%3DwwXIfr#"
+    },
+    "channelConfig": {
+        "whatsapp": {
+            "phoneNumber": "5215593170972"
+        },
+        "facebook": {
+            "page": "holaemitrabajo"
+        }
+    },
+    "about": {
+        "title": "Sobre la empresa",
+        "texts": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+        ]
+    },
+    "benefits": {
+        "title": "",
+        "benefitsSinceFirstDay": {
+            "title": "",
+            "texts": [{ "text": "" }]
+        },
+        "benefitsFromStart": {
+            "title": "",
+            "texts": [{ "text": "" }, { "text": "" }]
+        }
+    },
+    "eref2": {
+        "application": ["positionId"]
+    },
+    "linkGoBack": true,
+    "disclaimer": "Podrás aplicar a cualquier posición de Pizza Hut, y en caso de que cumplas con los requisitos y hayan vacantes te estaremos contactando",
+    "referral": {
+        "company_banner": "https://emi-public.s3.us-east-1.amazonaws.com/logos/bannerPizzaHut5.png",
+        "company_banner_mobile": "https://emi-public.s3.us-east-1.amazonaws.com/logos/bannerPizzaHut5.png",
+        "title": "",
+        "subTitle": "¿Conoces a alguien que quiera trabajar y divertirse al mismo tiempo? Refiérelo (a) entre más recomiendes, más ganas.",
+        "formTitle": "Refiere al mejor talento",
+        "instructionsTitle": "¡Referir conocidos nunca fue tan fácil!",
+        "instructionsSubTitle": "Sigue los siguientes pasos",
+        "instructions": [
+            { "title": "Paso 1", "text": "Coloca tu nombre completo, número de empleado (puedes consultarlo en tu recibo de nómina) y tienda en la que te ubicas." },
+            { "title": "Paso 2", "text": "Genera tu Liga Personal." },
+            { "title": "Paso 3", "text": "Compártela con quien tú quieras." },
+            { "title": "Paso 4", "text": "Tus referidos deberán ingresar a la liga y platicar con EMI. ¡Recuerda! Tu liga es personal por lo que asegúrate de colocar correctamente tu número de empleado así identificaremos fácilmente tu código y podrás disfrutar de los beneficios del Magnetobono." },
+            { "title": " Condiciones", "text": "- Tu recomendado ingresa como Asociado/ Repartidor: Si permanece 3 meses recibirás $1,000, si cumple 6 meses te damos $1,500 adicionales y si cumple 1 año trabajando con nosotros te ganas otro bono de $1,000 (Gana hasta $3,500 anuales por cada asociado/a que recomiendes)." },
+            { "text": "- Tu recomendado ingresa como Subgerente/ Gerente: Si permanece con nosotros 3 meses recibirás $2,500, si cumple 6 meses trabajando con el equipo te damos otros $2,500." }
+        ],
+        "attention": {
+            "title": "Aviso",
+            "texts": [
+                { "text": "Nota: Si deseas recomendar a un familiar, deberá aplicar a una sucursal diferente a la tuya. El staff gerencial solo puede recomendar Gerentes y Subgerentes. Si deseas más información acércate con el equipo de People (Recursos Humanos)." }
+            ]
+        },
+        "conditions": "",
+        "redirect": "https://wa.me/5215593170972?text=Hola+Emi!+Te+escribo+para+postularme+a+PizzaHut+tengo+el+código:",
+        "redirectListing": "2069",
+        "redrectListingType": "job",
+        "generateLinkButtonImg": "",
+        "employeeFields": [
+            {
+                "name": "employee_referrer_full_name",
+                "label": "Tu nombre completo",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/face.png"
+            },
+            {
+                "name": "employee_referrer_employee_id",
+                "label": "Tu número de empleado",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/space.png",
+                "maxLength": 7,
+                "minLength": 4,
+                "required": false
+            },
+            {
+                "name": "employee_referrer_working_place_id",
+                "label": "Tienda",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/disabled-pin.svg",
+                "dropdown": "stateSubsidiaryLocations",
+                "inputText": true
+            }
+        ],
+        "isIncentivized": false
+    }
+}

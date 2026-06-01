@@ -161,6 +161,14 @@ export function normalizeEmployeeFields(config, fieldCatalogMap) {
   return next;
 }
 
+export function buildWhatsAppRedirect(phoneNumber, companyName) {
+  const phone = String(phoneNumber || "").replace(/\D/g, "");
+  if (!phone) return "";
+  const name = (companyName || "").trim() || "la empresa";
+  const text = `Hola Emi! Te escribo para postularme a ${name} tengo el código:`;
+  return `https://wa.me/${phone}?text=${text.replace(/ /g, "+")}`;
+}
+
 export function ensureStyleFixedTextColors(style) {
   const s = style && typeof style === "object" ? clone(style) : {};
   const btn = s.mainFiltersSearchButton && typeof s.mainFiltersSearchButton === "object"
@@ -189,13 +197,19 @@ export function applyExportTweaks(config) {
   }
   const name = (out.company_name || "").trim() || "la empresa";
   out.disclaimer = `Podrás aplicar a cualquier posición de ${name}, y en caso de que cumplas con los requisitos y hayan vacantes te estaremos contactando`;
-  if (out.referral && out.referral.redirect) {
-    try {
-      const url = new URL(out.referral.redirect);
-      url.searchParams.set("text", `Hola Emi! Te escribo para postularme a ${name} tengo el código:`);
-      out.referral.redirect = url.toString().replace(/%20/g, "+");
-    } catch {
-      // Si redirect no es una URL válida, se deja como está.
+  if (out.referral) {
+    const phone = out.channelConfig?.whatsapp?.phoneNumber;
+    const built = buildWhatsAppRedirect(phone, name);
+    if (built) {
+      out.referral.redirect = built;
+    } else if (out.referral.redirect) {
+      try {
+        const url = new URL(out.referral.redirect);
+        url.searchParams.set("text", `Hola Emi! Te escribo para postularme a ${name} tengo el código:`);
+        out.referral.redirect = url.toString().replace(/%20/g, "+");
+      } catch {
+        // Si redirect no es una URL válida, se deja como está.
+      }
     }
   }
   return out;

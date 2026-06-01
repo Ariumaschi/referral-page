@@ -1,0 +1,102 @@
+{
+    "subsidiaryId": 596,
+    "vacancies": true,
+    "company_name": "Tiendas Bara",
+    "company_logo": "https://emi-public.s3.us-east-1.amazonaws.com/logos/tiendas-bara-logo.jpeg",
+    "company_banner": "https://emi-public.s3.us-east-1.amazonaws.com/logos/tiendas-bara-banner_deskto.png",
+    "mainFiltersButtonImg": "",
+    "company_banner_mobile": "https://emi-public.s3.us-east-1.amazonaws.com/logos/tiendas-bara-banner_mobile.png",
+    "main_title": "Este Es El Lugar de las oportunidades ¡Solo faltas tú!",
+    "filters_description": "Indica una palabra o una ubicación para encontrar una posición",
+    "filters_description_2": "",
+    "positions_container_title": "Posiciones Disponibles",
+    "positions_container_subtitle": "Filtrar posiciones disponibles por",
+    "goBackLinkImg": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/arrow-left.svg",
+    "country": "MX",
+    "language": "ES",
+    "style": {
+        "clientLogoBackgroundColor": "",
+        "mainFiltersContainerBackgroundColor": "#fec631",
+        "mainFiltersButtonBackgroundColor": "#de2325",
+        "cardButtonStyle": {
+            "background": "rgba(148, 188, 227, 0.2)",
+            "border": "1px solid #2f6db3",
+            "textColor": "#2f6db3"
+        },
+        "referralTitleBackgroundColor": "#F6D300",
+        "footerBackgroundColor": "#dae7f5",
+        "referralTitleTextAlign": "center",
+        "goBackLinkColor": "#dae7f5"
+    },
+    "socialNetworkLinks": {
+        "tikTok": "https://www.tiktok.com/@tiendasbara",
+        "facebook": "https://www.facebook.com/tiendasbaramx",
+        "instagram": "https://www.instagram.com/tiendasbara",
+        "linkedin": "https://www.linkedin.com/company/tiendasbarafemsa"
+    },
+    "channelConfig": {
+        "whatsapp": {
+            "phoneNumber": "5218141650206"
+        },
+        "facebook": {
+            "page": "holaemitrabajo"
+        }
+    },
+    "eref2": {},
+    "positionDetails": "**Qué ofrecemos**\n- Capacitación constante\n- Prestaciones superiores a las de ley\n- Uniformes y comedor gratuito\n- Seguro de Vida\n- Pago Semanal\n- Bono de transporte y asistencia\n- Estabilidad laboral\n\n**Requerimientos**\n- Educación mínima: Educación secundaria\n- Edad: entre 18 y 45 años\n- Documentación en regla (constancia fiscal sat indispensable)",
+    "disclaimer": "Podrás aplicar a Tiendas Bara, y en caso de que cumplas con los requisitos y haya vacantes te estaremos contactando",
+    "referral": {
+        "company_banner": "https://emi-public.s3.us-east-1.amazonaws.com/logos/tiendas-bara-banner_deskto.png",
+        "company_banner_mobile": "https://emi-public.s3.us-east-1.amazonaws.com/logos/tiendas-bara-banner_mobile.png",
+        "title": "Bienvenido al programa de referidos de Tiendas Bara",
+        "subTitle": "¡Invita a tus familiares y amigos a trabajar en Tiendas Bara! ❤️💛 ",
+        "formTitle": "Refiere al mejor talento",
+        "warning": "Si estás seguro que escribiste correctamente tus datos, haz click en \"Genera mi link\", cópialo y compártelo.",
+        "instructionsTitle": "¡Referir conocidos nunca fue tan fácil!",
+        "instructionsSubTitle": "Sigue los siguientes pasos:",
+        "instructions": [
+            { "title": "Paso 1 👆", "text": "Escribe tu Nombre Completo, Número de empleado (6-7 dígitos), Tienda y Teléfono" },
+            { "title": "Paso 2 😊", "text": "Genera tu LIGA PERSONAL." },
+            { "title": "Paso 3 ✨", "text": "Comparte la liga a tus familiares, amigos y conocidos/as." },
+            { "title": "Paso 4 🙌", "text": "El candidato/a referido debe dar click en tu liga personal de referidos y completar su aplicación platicando con Emi. ¡No te preocupes! Identificaremos tu código, sólo asegúrate de escribir correctamente tu número de empleado." }
+        ],
+        "attention": {
+            "title": "⚠ Aviso",
+            "texts": [
+                { "text": "Recuerda que es importante proporcionar correctamente tu número de empleado para que tu registro pueda validarse. En caso de tener dudas, consulta con tu Reclutador." }
+            ]
+        },
+        "conditions": "",
+        "redirect": "https://wa.me/5218141650206?text=Hola+Emi!+Te+escribo+para+postularme+a+Tiendas+Bara+tengo+el+código:",
+        "redirectListing": "1806",
+        "redrectListingType": "job",
+        "generateLinkButtonImg": "",
+        "employeeFields": [
+            {
+                "name": "employee_referrer_full_name",
+                "label": "Tu nombre completo",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/face.png"
+            },
+            {
+                "name": "employee_referrer_employee_id",
+                "label": "Número de empleado",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/space.png",
+                "maxLength": 7
+            },
+            {
+                "name": "employee_referrer_working_place_id",
+                "label": "Tienda",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/business_center.svg",
+                "dropdown": "stateSubsidiaryLocations",
+                "inputText": true
+            },
+            {
+                "name": "employee_referrer_phone_number",
+                "label": "Teléfono",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/space.png",
+                "maxLength": 10
+            }
+        ],
+        "isIncentivized": true
+    }
+}

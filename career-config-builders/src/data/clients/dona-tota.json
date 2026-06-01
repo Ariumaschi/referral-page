@@ -1,0 +1,130 @@
+{
+    "subsidiaryId": 464,
+    "vacancies": true,
+    "company_name": "Doña Tota",
+    "company_logo": "https://emi-public.s3.us-east-1.amazonaws.com/logos/DON%CC%83ATOTA_LOGOTIPO_03.png",
+    "company_banner": "https://emi-public.s3.us-east-1.amazonaws.com/logos/BannerDesktopDonaTota6.png",
+    "mainFiltersButtonImg": "https://emi-public.s3.amazonaws.com/static/Doña Tota/Logos/Ellipse+1.png",
+    "company_banner_mobile": "https://emi-public.s3.us-east-1.amazonaws.com/logos/BannerMobileDonaTota2.jpg",
+    "main_title": "Este Es El Lugar de las oportunidades ¡Solo faltas tú!",
+    "filters_description": "Indica una palabra o una ubicación para encontrar una posición",
+    "filters_description_2": "",
+    "positions_container_title": "Posiciones Disponibles",
+    "positions_container_subtitle": "Filtrar posiciones disponibles por",
+    "goBackLinkImg": "https://emi-public.s3.amazonaws.com/static/Walmart/Logos/arrow-left.svg",
+    "modalApplyImg": "https://emi-public.s3.amazonaws.com/static/Walmart/Logos/Ellipse+1.png",
+    "country": "MX",
+    "language": "ES",
+    "style": {
+        "clientLogoBackgroundColor": "#eb4825",
+        "mainFiltersContainerBackgroundColor": "#132e82",
+        "mainFiltersSearchButton": {
+            "background": "#2f6db3",
+            "color": "#FFFFFF"
+        },
+        "cardButtonStyle": {
+            "background": "rgba(148, 188, 227, 0.2)",
+            "border": "1px solid #2f6db3",
+            "textColor": "#2f6db3"
+        },
+        "footerBackgroundColor": "#dae7f5",
+        "goBackLinkColor": "#dae7f5",
+        "referralTitleBackgroundColor": "#eb4825",
+        "referralTitleTextAlign": "center"
+    },
+    "socialNetworkLinks": {
+        "linkedin": "https://www.linkedin.com/company/doña-tota-oficial/",
+        "facebook": "https://www.facebook.com/donatotamx?locale=es_LA",
+        "instagram": "https://www.instagram.com/donatota_mx/"
+    },
+    "channelConfig": {
+        "whatsapp": {
+            "phoneNumber": "5218135470441"
+        }
+    },
+    "about": {
+        "title": "Sobre la empresa",
+        "texts": [{ "text": "" }]
+    },
+    "benefits": {
+        "title": "Beneficios del puesto",
+        "benefitsSinceFirstDay": {
+            "title": "",
+            "texts": [{ "text": "Prestaciones de ley (desde el primer día de trabajo)" }]
+        },
+        "benefitsFromStart": {
+            "title": "Al contrato de planta",
+            "texts": [
+                { "text": "Caja de ahorro" },
+                { "text": "Vales de despensa" },
+                { "text": "Seguro de vida" },
+                { "text": "Aguinaldo superior a la ley" },
+                { "text": "Días personales y permisos especiales" },
+                { "text": "Descuento de asociado, en productos dentro del grupo" },
+                { "text": "Red de convenios y descuentos con otras marcas" },
+                { "text": "Bono anual de acuerdo a la venta de la unidad" },
+                { "text": "Orientación jurídica, médica y psicológica gratuita" },
+                { "text": "Planes de desarrollo y oportunidad de crecimiento" }
+            ]
+        }
+    },
+    "eref2": {
+        "application": ["positionId"]
+    },
+    "linkGoBack": true,
+    "disclaimer": "Podrás aplicar a cualquier posición de Doña Tota, y en caso de que cumplas con los requisitos y hayan vacantes te estaremos contactando",
+    "referral": {
+        "company_banner": "https://emi-public.s3.us-east-1.amazonaws.com/logos/BannerDesktopDonaTota6.png",
+        "company_banner_mobile": "https://emi-public.s3.us-east-1.amazonaws.com/logos/BannerMobileDonaTota2.jpg",
+        "title": "Recomienda y  gana",
+        "subTitle": "Completa los siguientes pasos",
+        "formTitle": "Refiere al mejor talento",
+        "help": {
+            "title": "",
+            "subTitle": "",
+            "instructions": ""
+        },
+        "warning": "Antes de enviar tu referido, revisa bien tus datos y el de tu contacto.",
+        "instructionsTitle": "¡Referir a tus contactos es muy sencillo!",
+        "instructionsSubTitle": "Sigue los siguientes pasos",
+        "instructions": [
+            { "title": "Primer Paso", "text": "Ingresa tu Nombre Completo, Número de empleado de 2 a 6 dígitos. *Revisa que sea correcto." },
+            { "title": "Segundo Paso", "text": "Genera tu liga personal." },
+            { "title": "Tercer Paso", "text": "Comparte tu liga con quienes quieran formar parte de Doña Tota" },
+            { "title": "Cuarto Paso", "text": "El candidato o candidata deberá registrarse a través de tu liga y completar su aplicación con Emi." },
+            { "title": "Quinto Paso", "text": "¡Listo!" }
+        ],
+        "attention": {
+            "title": "Aviso",
+            "texts": [
+                { "text": "Recuerda que si no proporcionas correctamente tu número de colaborador, no podrás disfrutar de los beneficios del programa." },
+                { "text": "Recuerda que para cualquier duda que tengas respecto al programa, puedes contactar al equipo de Atracción de Talento." }
+            ]
+        },
+        "conditions": "",
+        "redirect": "https://wa.me/5218135470441?text=Hola+Emi!+Te+escribo+para+postularme+a+Doña+Tota+tengo+el+código:",
+        "redirectListing": "2673",
+        "redrectListingType": "job",
+        "generateLinkButtonImg": "",
+        "employeeFields": [
+            {
+                "name": "employee_referrer_full_name",
+                "label": "Nombre y apellido",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/face.png"
+            },
+            {
+                "name": "employee_referrer_employee_id",
+                "label": "Número de empleado",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/space.png"
+            },
+            {
+                "name": "employee_referrer_working_place_id",
+                "label": "Tienda",
+                "emoji": "https://emi-public.s3.amazonaws.com/static/walmart/Logos/disabled-pin.svg",
+                "dropdown": "stateSubsidiaryLocations",
+                "inputText": true
+            }
+        ],
+        "isIncentivized": false
+    }
+}
